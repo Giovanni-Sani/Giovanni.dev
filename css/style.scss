@@ -1,0 +1,1443 @@
+// utilities 
+* {
+    font-family: inter, Arial, Helvetica, sans-serif;
+    scrollbar-color: #cccccc #fff;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #FFF9E5;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 94px;
+}
+
+.grey {
+    background-color: #F5F5F5;
+}
+
+.dark {
+    background-color: #2B2B2B;
+}
+
+.apriMenu {
+    left: 0 !important;
+}
+
+
+// hamburgerMenu
+.hamburgerMenu {
+
+    position: fixed;
+    background-color: #FFF9E5;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    left: 100%;
+    z-index: 999;
+    transition: all 0.4s ease;
+
+    ul {
+        li {
+            margin: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            a {
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #2B2B2B;
+            }
+        }
+    }
+}
+
+// header 
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 94px;
+    position: fixed;
+
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+
+
+    h4 {
+        font-weight: 600;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 67px;
+
+            a {
+                font-weight: 600;
+                font-size: 16px;
+                color: black;
+                transition: opacity .2s ease;
+
+                &:hover {
+                    // color: #5c8aff;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+// viewport 
+.viewport {
+    background-image: url(../img/primafoto-seppia.png);
+    background-repeat: no-repeat;
+    background-size: 871px 807px;
+    background-position: right bottom;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+
+    .mainText {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: auto;
+        width: 1280px;
+        gap: 29px;
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: #303030;
+        }
+
+        p {
+            font-size: medium;
+            font-size: 24px;
+            color: rgb(93, 93, 93);
+        }
+
+        span {
+            cursor: pointer;
+            display: flex;
+            gap: 20px;
+
+            svg {
+                transition: all .2s ease;
+                max-height: 40px;
+                max-width: 40px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-10%);
+                }
+
+            }
+        }
+
+        .techStack {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                padding-right: 65px;
+                color: #303030;
+                border-right: 1px solid black;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 68px;
+                padding-left: 60px;
+
+                svg {
+                    height: 60px;
+                    width: 60px;
+                    // cursor: pointer;
+                    transition: transform .2s ease;
+
+                    &:hover {
+                        transform: translate(0px, -10px);
+                    }
+                }
+            }
+        }
+
+        .designStack {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                padding-right: 41px;
+                color: #303030;
+                border-right: 1px solid black;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 68px;
+                padding-left: 60px;
+
+                svg {
+                    height: 60px;
+                    width: 60px;
+                    // cursor: pointer;
+                    transition: transform .2s ease;
+
+                    &:hover {
+                        transform: translate(0px, -10px);
+                    }
+                }
+            }
+        }
+    }
+
+    .giovanni-pic {
+        display: none;
+    }
+}
+
+// sectionProfilo 
+.sectionProfilo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 950px;
+    gap: 25px;
+
+    img {
+        max-width: 430px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    .textSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        .title {
+            font-weight: 700;
+            font-size: 24px;
+            color: #215FFF;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 36px;
+            color: #303030;
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 20px;
+            color: rgb(93, 93, 93);
+            margin-top: 25px;
+            line-height: 1.5;
+        }
+    }
+}
+
+// sectionProgetti 
+.sectionProgetti {
+    display: flex;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #303030;
+        margin: auto;
+    }
+
+}
+
+// sectionContatti 
+.sectionContatti {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #215FFF;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #303030;
+    }
+
+    .contatti {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+
+        .contattiGruppo {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            svg {
+                padding: 10px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 30%;
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+                fill: white;
+                stroke: white;
+
+            }
+
+
+
+            .descrizione {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-left: 20px;
+
+                h4 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0;
+                    color: #215FFF;
+                }
+
+                p {
+                    color: rgb(93, 93, 93);
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+// footer 
+footer {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 94px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        opacity: 0.9;
+    }
+
+    a {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        svg {
+            max-height: 40px;
+            max-width: 40px;
+            fill: white;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// CSS per il layout desktop 
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
+    .viewport {
+        background-image: url(../img/primafoto-seppia.png);
+        background-repeat: no-repeat;
+        background-size: 771px 707px;
+        background-position: right bottom;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        .mainText {
+            width: 950px;
+            gap: 5px;
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            span {
+                margin-top: 15px;
+
+                svg {
+
+                    max-height: 30px;
+                    max-width: 30px;
+
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .techStack {
+                margin: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 60px;
+                }
+
+                .icons {
+                    gap: 50px;
+                    padding-left: 50px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+
+            .designStack {
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 40px;
+                }
+
+                .icons {
+                    gap: 50px;
+                    padding-left: 50px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// css per layout tablet 
+@media screen and (min-width: 1100px) and (max-width: 1279px) {
+    .viewport {
+        background-image: none;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 94px;
+
+        .mainText {
+            width: auto;
+            gap: 5px;
+            margin: 0;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            span {
+                margin-top: 15px;
+
+                svg {
+
+                    max-height: 30px;
+                    max-width: 30px;
+
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .techStack {
+                margin: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 60px;
+                }
+
+                .icons {
+                    gap: 30px;
+                    padding-left: 30px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+
+            .designStack {
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 40px;
+                }
+
+                .icons {
+                    gap: 30px;
+                    padding-left: 30px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        .giovanni-pic {
+            display: block;
+
+
+            img {
+                max-width: 370px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+                background-color: rgb(247, 252, 255);
+                // keyframe morph 
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                animation: morph 10s ease-in-out infinite;
+                transition: all 0.3s ease-in-out;
+
+
+                &:hover {
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
+    }
+}
+
+// css per layout tablet piccolo
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+    section {
+        padding: 100px 94px;
+    }
+
+    // header 
+    .header {
+        top: 0;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 70px;
+        position: fixed;
+
+        background: rgba(255, 255, 255, 0.19);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+
+
+        h4 {
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .menu-list {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 40px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: black;
+                    transition: opacity .2s ease;
+
+                    &:hover {
+                        // color: #5c8aff;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    // viewport
+    .viewport {
+        background-image: none;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .mainText {
+            align-items: center;
+            width: 100%;
+            gap: 5px;
+            margin: 0;
+
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            span {
+                margin: 15px 0;
+
+                svg {
+
+                    max-height: 30px;
+                    max-width: 30px;
+
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            h5 {
+                display: block !important;
+                font-size: 18px;
+                color: #303030;
+                margin: 15px 0 10px 0;
+                padding-bottom: 4px;
+                border-bottom: 1px solid black;
+            }
+
+            .techStack {
+                max-width: 500px;
+                margin: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 30px;
+                    display: none;
+                }
+
+                .icons {
+                    gap: 30px;
+                    padding-left: 30px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+
+                        &:hover {
+                            transform: translate(0px, -5px);
+                        }
+                    }
+                }
+            }
+
+            .designStack {
+                max-width: 500px;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 30px;
+                    display: none;
+                }
+
+                .icons {
+                    gap: 30px;
+                    padding-left: 30px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+
+                        &:hover {
+                            transform: translate(0px, -5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .giovanni-pic {
+            display: block;
+
+
+            img {
+                max-width: 270px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+                background-color: rgb(247, 252, 255);
+                // keyframe morph 
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                animation: morph 10s ease-in-out infinite;
+                transition: all 0.3s ease-in-out;
+
+
+                &:hover {
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
+    }
+
+    // profilo 
+    .sectionProfilo {
+        flex-direction: column;
+
+        img {
+            max-width: 380px;
+        }
+
+        .textSide {
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                max-width: 610px;
+            }
+        }
+    }
+
+    // sectionProgetti 
+    .sectionProgetti {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    // sectionContatti 
+    .sectionContatti {
+        width: 100%;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+
+        .contatti {
+            max-width: 740px;
+            margin-top: 40px;
+
+            .contattiGruppo {
+                svg {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .descrizione {
+                    margin-left: 15px;
+
+                    h4 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer 
+    footer {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 94px;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            svg {
+                max-height: 40px;
+                max-width: 40px;
+                fill: white;
+            }
+        }
+    }
+}
+
+// css per layout tablet piccolo piccolo
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+
+    section {
+        padding: 50px 60px;
+    }
+
+    // header 
+    .header {
+        height: 60px;
+        padding: 0 30px;
+
+        h4 {
+            font-size: 16px;
+        }
+
+        .menu-list {
+            ul {
+                gap: 20px;
+
+                li {
+                    display: none;
+                }
+
+                .hamburger {
+                    display: block !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // viewport
+    .viewport {
+        background-image: none;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .mainText {
+            align-items: center;
+            width: 100%;
+            gap: 5px;
+            margin: 0;
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                max-width: 400px;
+            }
+
+            span {
+                margin: 15px 0;
+
+                svg {
+
+                    max-height: 30px;
+                    max-width: 30px;
+
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            h5 {
+                display: block !important;
+                font-size: 14px;
+                color: #303030;
+                margin: 10px 0 5px 0;
+                padding-bottom: 4px;
+                border-bottom: 1px solid black;
+            }
+
+            .techStack {
+                max-width: 500px;
+                margin: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 30px;
+                    display: none;
+                }
+
+                .icons {
+                    gap: 15px;
+                    padding-left: 0;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+
+                        &:hover {
+                            transform: translate(0px, -5px);
+                        }
+                    }
+                }
+            }
+
+            .designStack {
+                max-width: 500px;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 30px;
+                    display: none;
+                }
+
+                .icons {
+                    gap: 15px;
+                    padding-left: 0px;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+
+                        &:hover {
+                            transform: translate(0px, -5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .giovanni-pic {
+            display: block;
+
+
+            img {
+                max-width: 170px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+                background-color: rgb(247, 252, 255);
+                // keyframe morph 
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                animation: morph 10s ease-in-out infinite;
+                transition: all 0.3s ease-in-out;
+                display: none;
+
+                &:hover {
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            .foto-telefono {
+                display: block !important;
+            }
+        }
+
+    }
+
+    // profilo 
+    .sectionProfilo {
+        flex-direction: column;
+
+        img {
+            max-width: 220px;
+        }
+
+        .textSide {
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                max-width: 450px;
+            }
+        }
+    }
+
+    // sectionProgetti 
+    .sectionProgetti {
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    // sectionContatti 
+    .sectionContatti {
+        width: 100%;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .contatti {
+            max-width: 740px;
+            margin-top: 40px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+
+            .contattiGruppo {
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    padding: 5px;
+                }
+
+                .descrizione {
+                    margin-left: 15px;
+
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer 
+    footer {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 0 60px;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            svg {
+                max-height: 30px;
+                max-width: 30px;
+                fill: white;
+            }
+        }
+    }
+}
+
+// css per layout telefono 
+@media screen and (max-width: 499px) {
+
+
+    section {
+        padding: 50px 30px;
+    }
+
+    // header
+    .header {
+        height: 60px;
+        padding: 0 30px;
+
+        h4 {
+            font-size: 16px;
+        }
+
+        .menu-list {
+            ul {
+                gap: 20px;
+
+                li {
+                    display: none;
+                }
+
+                .hamburger {
+                    display: block !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // viewport
+    .viewport {
+        background-image: none;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .mainText {
+            align-items: center;
+            width: 100%;
+            gap: 5px;
+            margin: 0;
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                max-width: 400px;
+            }
+
+            span {
+                margin: 15px 0;
+
+                svg {
+
+                    max-height: 30px;
+                    max-width: 30px;
+
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            h5 {
+                display: block !important;
+                font-size: 14px;
+                color: #303030;
+                margin: 10px 0 5px 0;
+                padding-bottom: 4px;
+                border-bottom: 1px solid black;
+            }
+
+            .techStack {
+                max-width: 500px;
+                margin: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 30px;
+                    display: none;
+                }
+
+                .icons {
+                    gap: 15px;
+                    padding-left: 0;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+
+                        &:hover {
+                            transform: translate(0px, -5px);
+                        }
+                    }
+                }
+            }
+
+            .designStack {
+                max-width: 500px;
+
+                h3 {
+                    font-size: 20px;
+                    padding-right: 30px;
+                    display: none;
+                }
+
+                .icons {
+                    gap: 15px;
+                    padding-left: 0px;
+
+                    svg {
+                        height: 30px;
+                        width: 30px;
+
+                        &:hover {
+                            transform: translate(0px, -5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .giovanni-pic {
+            display: block;
+
+
+            img {
+                display: none;
+                max-width: 170px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+                background-color: rgb(247, 252, 255);
+                // keyframe morph 
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                animation: morph 10s ease-in-out infinite;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            .foto-telefono {
+                display: block !important;
+            }
+        }
+
+    }
+
+    // profilo 
+    .sectionProfilo {
+        flex-direction: column;
+
+        img {
+            max-width: 160px;
+        }
+
+        .textSide {
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                max-width: 450px;
+            }
+        }
+    }
+
+    // sectionProgetti 
+    .sectionProgetti {
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    // sectionContatti 
+    .sectionContatti {
+        width: 100%;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .contatti {
+            max-width: 740px;
+            margin-top: 40px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+
+            .contattiGruppo {
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    padding: 5px;
+                }
+
+                .descrizione {
+                    margin-left: 15px;
+
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer 
+    footer {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 0 10px;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            svg {
+                max-height: 30px;
+                max-width: 30px;
+                fill: white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Animazione foto Giovanni da tablet e telefono 
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}

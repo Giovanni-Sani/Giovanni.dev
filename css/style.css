@@ -1,0 +1,1091 @@
+* {
+  font-family: inter, Arial, Helvetica, sans-serif;
+  scrollbar-color: #cccccc #fff;
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: #FFF9E5;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 94px;
+}
+
+.grey {
+  background-color: #F5F5F5;
+}
+
+.dark {
+  background-color: #2B2B2B;
+}
+
+.apriMenu {
+  left: 0 !important;
+}
+
+.hamburgerMenu {
+  position: fixed;
+  background-color: #FFF9E5;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  left: 100%;
+  z-index: 999;
+  transition: all 0.4s ease;
+}
+.hamburgerMenu ul li {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburgerMenu ul li a {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2B2B2B;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 94px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header h4 {
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+.header .menu-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 67px;
+}
+.header .menu-list ul a {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  transition: opacity 0.2s ease;
+}
+.header .menu-list ul a:hover {
+  opacity: 0.7;
+}
+
+.viewport {
+  background-image: url(../img/primafoto-seppia.png);
+  background-repeat: no-repeat;
+  background-size: 871px 807px;
+  background-position: right bottom;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.viewport .mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: auto;
+  width: 1280px;
+  gap: 29px;
+}
+.viewport .mainText h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #303030;
+}
+.viewport .mainText p {
+  font-size: medium;
+  font-size: 24px;
+  color: rgb(93, 93, 93);
+}
+.viewport .mainText span {
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+}
+.viewport .mainText span svg {
+  transition: all 0.2s ease;
+  max-height: 40px;
+  max-width: 40px;
+  cursor: pointer;
+}
+.viewport .mainText span svg:hover {
+  transform: translateY(-10%);
+}
+.viewport .mainText .techStack {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.viewport .mainText .techStack h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 65px;
+  color: #303030;
+  border-right: 1px solid black;
+}
+.viewport .mainText .techStack .icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 68px;
+  padding-left: 60px;
+}
+.viewport .mainText .techStack .icons svg {
+  height: 60px;
+  width: 60px;
+  transition: transform 0.2s ease;
+}
+.viewport .mainText .techStack .icons svg:hover {
+  transform: translate(0px, -10px);
+}
+.viewport .mainText .designStack {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.viewport .mainText .designStack h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 41px;
+  color: #303030;
+  border-right: 1px solid black;
+}
+.viewport .mainText .designStack .icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 68px;
+  padding-left: 60px;
+}
+.viewport .mainText .designStack .icons svg {
+  height: 60px;
+  width: 60px;
+  transition: transform 0.2s ease;
+}
+.viewport .mainText .designStack .icons svg:hover {
+  transform: translate(0px, -10px);
+}
+.viewport .giovanni-pic {
+  display: none;
+}
+
+.sectionProfilo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 950px;
+  gap: 25px;
+}
+.sectionProfilo img {
+  max-width: 430px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.sectionProfilo .textSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.sectionProfilo .textSide .title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #215FFF;
+}
+.sectionProfilo .textSide h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #303030;
+}
+.sectionProfilo .textSide p {
+  font-weight: normal;
+  font-size: 20px;
+  color: rgb(93, 93, 93);
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.sectionProgetti {
+  display: flex;
+}
+.sectionProgetti h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #303030;
+  margin: auto;
+}
+
+.sectionContatti {
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.sectionContatti h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #215FFF;
+}
+.sectionContatti h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #303030;
+}
+.sectionContatti .contatti {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.sectionContatti .contatti .contattiGruppo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.sectionContatti .contatti .contattiGruppo svg {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  fill: white;
+  stroke: white;
+}
+.sectionContatti .contatti .contattiGruppo .descrizione {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 20px;
+}
+.sectionContatti .contatti .contattiGruppo .descrizione h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #215FFF;
+}
+.sectionContatti .contatti .contattiGruppo .descrizione p {
+  color: rgb(93, 93, 93);
+  font-size: 24px;
+}
+
+footer {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 94px;
+}
+footer h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  opacity: 0.9;
+}
+footer a {
+  cursor: pointer;
+}
+footer a:hover {
+  opacity: 0.7;
+}
+footer a svg {
+  max-height: 40px;
+  max-width: 40px;
+  fill: white;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1470px) {
+  .viewport {
+    background-image: url(../img/primafoto-seppia.png);
+    background-repeat: no-repeat;
+    background-size: 771px 707px;
+    background-position: right bottom;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .viewport .mainText {
+    width: 950px;
+    gap: 5px;
+  }
+  .viewport .mainText h1 {
+    font-size: 48px;
+  }
+  .viewport .mainText p {
+    font-size: 20px;
+  }
+  .viewport .mainText span {
+    margin-top: 15px;
+  }
+  .viewport .mainText span svg {
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .viewport .mainText span svg:hover {
+    opacity: 0.7;
+  }
+  .viewport .mainText .techStack {
+    margin: 15px 0;
+  }
+  .viewport .mainText .techStack h3 {
+    font-size: 20px;
+    padding-right: 60px;
+  }
+  .viewport .mainText .techStack .icons {
+    gap: 50px;
+    padding-left: 50px;
+  }
+  .viewport .mainText .techStack .icons svg {
+    height: 40px;
+    width: 40px;
+  }
+  .viewport .mainText .designStack h3 {
+    font-size: 20px;
+    padding-right: 40px;
+  }
+  .viewport .mainText .designStack .icons {
+    gap: 50px;
+    padding-left: 50px;
+  }
+  .viewport .mainText .designStack .icons svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1279px) {
+  .viewport {
+    background-image: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 94px;
+  }
+  .viewport .mainText {
+    width: auto;
+    gap: 5px;
+    margin: 0;
+  }
+  .viewport .mainText h1 {
+    font-size: 40px;
+  }
+  .viewport .mainText p {
+    font-size: 16px;
+  }
+  .viewport .mainText span {
+    margin-top: 15px;
+  }
+  .viewport .mainText span svg {
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .viewport .mainText span svg:hover {
+    opacity: 0.7;
+  }
+  .viewport .mainText .techStack {
+    margin: 15px 0;
+  }
+  .viewport .mainText .techStack h3 {
+    font-size: 20px;
+    padding-right: 60px;
+  }
+  .viewport .mainText .techStack .icons {
+    gap: 30px;
+    padding-left: 30px;
+  }
+  .viewport .mainText .techStack .icons svg {
+    height: 40px;
+    width: 40px;
+  }
+  .viewport .mainText .designStack h3 {
+    font-size: 20px;
+    padding-right: 40px;
+  }
+  .viewport .mainText .designStack .icons {
+    gap: 30px;
+    padding-left: 30px;
+  }
+  .viewport .mainText .designStack .icons svg {
+    height: 40px;
+    width: 40px;
+  }
+  .viewport .giovanni-pic {
+    display: block;
+  }
+  .viewport .giovanni-pic img {
+    max-width: 370px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgb(247, 252, 255);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: morph 10s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+  }
+  .viewport .giovanni-pic img:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  section {
+    padding: 100px 94px;
+  }
+  .header {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .header h4 {
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .header .menu-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+  }
+  .header .menu-list ul a {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    transition: opacity 0.2s ease;
+  }
+  .header .menu-list ul a:hover {
+    opacity: 0.7;
+  }
+  .viewport {
+    background-image: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .viewport .mainText {
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin: 0;
+  }
+  .viewport .mainText h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .viewport .mainText p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .viewport .mainText span {
+    margin: 15px 0;
+  }
+  .viewport .mainText span svg {
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .viewport .mainText span svg:hover {
+    opacity: 0.7;
+  }
+  .viewport .mainText h5 {
+    display: block !important;
+    font-size: 18px;
+    color: #303030;
+    margin: 15px 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+  }
+  .viewport .mainText .techStack {
+    max-width: 500px;
+    margin: 15px 0;
+  }
+  .viewport .mainText .techStack h3 {
+    font-size: 20px;
+    padding-right: 30px;
+    display: none;
+  }
+  .viewport .mainText .techStack .icons {
+    gap: 30px;
+    padding-left: 30px;
+  }
+  .viewport .mainText .techStack .icons svg {
+    height: 40px;
+    width: 40px;
+  }
+  .viewport .mainText .techStack .icons svg:hover {
+    transform: translate(0px, -5px);
+  }
+  .viewport .mainText .designStack {
+    max-width: 500px;
+  }
+  .viewport .mainText .designStack h3 {
+    font-size: 20px;
+    padding-right: 30px;
+    display: none;
+  }
+  .viewport .mainText .designStack .icons {
+    gap: 30px;
+    padding-left: 30px;
+  }
+  .viewport .mainText .designStack .icons svg {
+    height: 40px;
+    width: 40px;
+  }
+  .viewport .mainText .designStack .icons svg:hover {
+    transform: translate(0px, -5px);
+  }
+  .viewport .giovanni-pic {
+    display: block;
+  }
+  .viewport .giovanni-pic img {
+    max-width: 270px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgb(247, 252, 255);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: morph 10s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+  }
+  .viewport .giovanni-pic img:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  }
+  .sectionProfilo {
+    flex-direction: column;
+  }
+  .sectionProfilo img {
+    max-width: 380px;
+  }
+  .sectionProfilo .textSide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionProfilo .textSide .title {
+    font-size: 20px;
+  }
+  .sectionProfilo .textSide h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .sectionProfilo .textSide p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 610px;
+  }
+  .sectionProgetti h1 {
+    font-size: 30px;
+  }
+  .sectionContatti {
+    width: 100%;
+  }
+  .sectionContatti h2 {
+    font-size: 20px;
+  }
+  .sectionContatti h3 {
+    font-size: 28px;
+  }
+  .sectionContatti .contatti {
+    max-width: 740px;
+    margin-top: 40px;
+  }
+  .sectionContatti .contatti .contattiGruppo svg {
+    width: 50px;
+    height: 50px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione {
+    margin-left: 15px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione h4 {
+    font-size: 18px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione p {
+    font-size: 16px;
+  }
+  footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 94px;
+  }
+  footer h2 {
+    font-size: 18px;
+  }
+  footer a {
+    cursor: pointer;
+  }
+  footer a:hover {
+    opacity: 0.7;
+  }
+  footer a svg {
+    max-height: 40px;
+    max-width: 40px;
+    fill: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  section {
+    padding: 50px 60px;
+  }
+  .header {
+    height: 60px;
+    padding: 0 30px;
+  }
+  .header h4 {
+    font-size: 16px;
+  }
+  .header .menu-list ul {
+    gap: 20px;
+  }
+  .header .menu-list ul li {
+    display: none;
+  }
+  .header .menu-list ul .hamburger {
+    display: block !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .menu-list ul .hamburger svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header .menu-list ul a {
+    font-size: 14px;
+  }
+  .viewport {
+    background-image: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .viewport .mainText {
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin: 0;
+  }
+  .viewport .mainText h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .viewport .mainText p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+  }
+  .viewport .mainText span {
+    margin: 15px 0;
+  }
+  .viewport .mainText span svg {
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .viewport .mainText span svg:hover {
+    opacity: 0.7;
+  }
+  .viewport .mainText h5 {
+    display: block !important;
+    font-size: 14px;
+    color: #303030;
+    margin: 10px 0 5px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+  }
+  .viewport .mainText .techStack {
+    max-width: 500px;
+    margin: 15px 0;
+  }
+  .viewport .mainText .techStack h3 {
+    font-size: 20px;
+    padding-right: 30px;
+    display: none;
+  }
+  .viewport .mainText .techStack .icons {
+    gap: 15px;
+    padding-left: 0;
+  }
+  .viewport .mainText .techStack .icons svg {
+    height: 30px;
+    width: 30px;
+  }
+  .viewport .mainText .techStack .icons svg:hover {
+    transform: translate(0px, -5px);
+  }
+  .viewport .mainText .designStack {
+    max-width: 500px;
+  }
+  .viewport .mainText .designStack h3 {
+    font-size: 20px;
+    padding-right: 30px;
+    display: none;
+  }
+  .viewport .mainText .designStack .icons {
+    gap: 15px;
+    padding-left: 0px;
+  }
+  .viewport .mainText .designStack .icons svg {
+    height: 30px;
+    width: 30px;
+  }
+  .viewport .mainText .designStack .icons svg:hover {
+    transform: translate(0px, -5px);
+  }
+  .viewport .giovanni-pic {
+    display: block;
+  }
+  .viewport .giovanni-pic img {
+    max-width: 170px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgb(247, 252, 255);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: morph 10s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+    display: none;
+  }
+  .viewport .giovanni-pic img:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  }
+  .viewport .giovanni-pic .foto-telefono {
+    display: block !important;
+  }
+  .sectionProfilo {
+    flex-direction: column;
+  }
+  .sectionProfilo img {
+    max-width: 220px;
+  }
+  .sectionProfilo .textSide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionProfilo .textSide .title {
+    font-size: 16px;
+  }
+  .sectionProfilo .textSide h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sectionProfilo .textSide p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 450px;
+  }
+  .sectionProgetti h1 {
+    font-size: 18px;
+  }
+  .sectionContatti {
+    width: 100%;
+  }
+  .sectionContatti h2 {
+    font-size: 16px;
+  }
+  .sectionContatti h3 {
+    font-size: 18px;
+  }
+  .sectionContatti .contatti {
+    max-width: 740px;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .sectionContatti .contatti .contattiGruppo svg {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione {
+    margin-left: 15px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione h4 {
+    font-size: 16px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione p {
+    font-size: 14px;
+  }
+  footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 60px;
+  }
+  footer h2 {
+    font-size: 16px;
+  }
+  footer a {
+    cursor: pointer;
+  }
+  footer a:hover {
+    opacity: 0.7;
+  }
+  footer a svg {
+    max-height: 30px;
+    max-width: 30px;
+    fill: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  section {
+    padding: 50px 30px;
+  }
+  .header {
+    height: 60px;
+    padding: 0 30px;
+  }
+  .header h4 {
+    font-size: 16px;
+  }
+  .header .menu-list ul {
+    gap: 20px;
+  }
+  .header .menu-list ul li {
+    display: none;
+  }
+  .header .menu-list ul .hamburger {
+    display: block !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .menu-list ul .hamburger svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header .menu-list ul a {
+    font-size: 14px;
+  }
+  .viewport {
+    background-image: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .viewport .mainText {
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin: 0;
+  }
+  .viewport .mainText h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .viewport .mainText p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+  }
+  .viewport .mainText span {
+    margin: 15px 0;
+  }
+  .viewport .mainText span svg {
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .viewport .mainText span svg:hover {
+    opacity: 0.7;
+  }
+  .viewport .mainText h5 {
+    display: block !important;
+    font-size: 14px;
+    color: #303030;
+    margin: 10px 0 5px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+  }
+  .viewport .mainText .techStack {
+    max-width: 500px;
+    margin: 15px 0;
+  }
+  .viewport .mainText .techStack h3 {
+    font-size: 20px;
+    padding-right: 30px;
+    display: none;
+  }
+  .viewport .mainText .techStack .icons {
+    gap: 15px;
+    padding-left: 0;
+  }
+  .viewport .mainText .techStack .icons svg {
+    height: 30px;
+    width: 30px;
+  }
+  .viewport .mainText .techStack .icons svg:hover {
+    transform: translate(0px, -5px);
+  }
+  .viewport .mainText .designStack {
+    max-width: 500px;
+  }
+  .viewport .mainText .designStack h3 {
+    font-size: 20px;
+    padding-right: 30px;
+    display: none;
+  }
+  .viewport .mainText .designStack .icons {
+    gap: 15px;
+    padding-left: 0px;
+  }
+  .viewport .mainText .designStack .icons svg {
+    height: 30px;
+    width: 30px;
+  }
+  .viewport .mainText .designStack .icons svg:hover {
+    transform: translate(0px, -5px);
+  }
+  .viewport .giovanni-pic {
+    display: block;
+  }
+  .viewport .giovanni-pic img {
+    display: none;
+    max-width: 170px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgb(247, 252, 255);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: morph 10s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+  }
+  .viewport .giovanni-pic img:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  }
+  .viewport .giovanni-pic .foto-telefono {
+    display: block !important;
+  }
+  .sectionProfilo {
+    flex-direction: column;
+  }
+  .sectionProfilo img {
+    max-width: 160px;
+  }
+  .sectionProfilo .textSide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionProfilo .textSide .title {
+    font-size: 16px;
+  }
+  .sectionProfilo .textSide h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sectionProfilo .textSide p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 450px;
+  }
+  .sectionProgetti h1 {
+    font-size: 18px;
+  }
+  .sectionContatti {
+    width: 100%;
+  }
+  .sectionContatti h2 {
+    font-size: 16px;
+  }
+  .sectionContatti h3 {
+    font-size: 18px;
+  }
+  .sectionContatti .contatti {
+    max-width: 740px;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .sectionContatti .contatti .contattiGruppo svg {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione {
+    margin-left: 15px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione h4 {
+    font-size: 16px;
+  }
+  .sectionContatti .contatti .contattiGruppo .descrizione p {
+    font-size: 14px;
+  }
+  footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+  footer h2 {
+    font-size: 16px;
+  }
+  footer a {
+    cursor: pointer;
+  }
+  footer a:hover {
+    opacity: 0.7;
+  }
+  footer a svg {
+    max-height: 30px;
+    max-width: 30px;
+    fill: white;
+  }
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}/*# sourceMappingURL=style.css.map */
